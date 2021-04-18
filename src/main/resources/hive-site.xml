@@ -1,0 +1,31 @@
+<configuration>
+    <property>  
+        <name>hive.exec.scratchdir</name> 
+        <value>hdfs://192.168.10.132:9000/hive/tmp</value>
+<!--        <value>hdfs://146.56.208.76:9000/hive/tmp</value>-->
+    </property>
+    <property>
+        <name>hive.metastore.warehouse.dir</name>
+        <value>hdfs://192.168.10.132:9000/hive/warehouse</value>
+<!--        <value>hdfs://146.56.208.76:9000/hive/warehouse</value>-->
+    </property>
+    <property>  
+        <name>hive.querylog.location</name>
+        <value>hdfs://192.168.10.132:9000/hive/log</value>
+<!--        <value>hdfs://146.56.208.76:9000/hive/log</value>-->
+    </property>
+    <property>
+        <name>hive.server2.thrift.port</name>
+        <value>10000</value>
+    </property>
+    <property>
+        <name>hive.server2.thrift.bind.host</name>
+        <value>192.168.10.132</value>
+<!--        <value>146.56.208.76</value>-->
+    </property>
+    <property>
+        <name>hive.metastore.uris</name>
+        <value>thrift://192.168.10.132:9083</value>
+<!--        <value>thrift://146.56.208.76:9083</value>-->
+    </property>
+</configuration>
